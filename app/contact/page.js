@@ -277,10 +277,10 @@ export default function ContactPage() {
                         <h3 className="font-bold text-lg mb-2 text-foreground">Phone</h3>
                         <p className="text-muted-foreground">
                           <a href="tel:+971563045152" className="hover:text-blue-600 transition-colors">
-                            +971 563045152
+                            +919545031601
                           </a>
                         </p>
-                        <p className="text-sm text-muted-foreground mt-1">Bijal Shah - Founder</p>
+                        <p className="text-sm text-muted-foreground mt-1">+971589931660</p>
                       </div>
                     </div>
                   </CardContent>
@@ -296,7 +296,7 @@ export default function ContactPage() {
                         <h3 className="font-bold text-lg mb-2 text-foreground">Website</h3>
                         <p className="text-muted-foreground">
                           <a href="http://www.bsquareglobalfze.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-                            www.bsquareglobalfze.com
+                            www.bimbridge.in
                           </a>
                         </p>
                       </div>
@@ -313,7 +313,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-bold text-lg mb-2 text-foreground">Location</h3>
                         <p className="text-muted-foreground">
-                          United Arab Emirates
+                        Location India,UAE,Saudi Arabia
                         </p>
                         <p className="text-sm text-muted-foreground mt-1">Serving clients across the UAE and beyond</p>
                       </div>

@@ -78,7 +78,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-              About B Square Global
+              About Bimbridge
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
               Your trusted BIM partner with two decades of expertise in transforming construction projects across the UAE
@@ -101,11 +101,9 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">Who We Are</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                B Square Global is a leading BIM consulting and services company founded by Bijal Shah, bringing over 20 years of expertise in BIM technology and construction management. We specialize in helping architects, engineers, and builders deliver successful projects through innovative Building Information Modeling solutions.
-              </p>
+              Bimbridge is a leading BIM consulting and services company founded by Amir Khan, bringing over 15 years of expertise in BIM technology and construction management. We specialize in helping architects, engineers, and builders deliver successful projects through innovative Building Information Modeling solutions.              </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Our team works closely with clients across the UAE and beyond, providing comprehensive BIM services that streamline workflows, enhance collaboration, and ensure project success from design to construction and facility management.
-              </p>
+              Our team works closely with clients across the India,UAE,and beyond, providing comprehensive BIM services that streamline workflows, enhance collaboration, and ensure project success from design to construction and facility management.              </p>
               <div className="space-y-3">
                 {[
                   'Expert team with decades of combined experience',

@@ -58,10 +58,10 @@ export default function Home() {
 
   const stats = [
    
-    { value: 20, suffix: '+', label: 'Years Experience', duration: 1500 },
-    { value: 500, suffix: '+', label: 'Projects Delivered', duration: 2000 },
-    { value: 50, suffix: '+', label: 'Expert Team', duration: 1200 },
-    { value: 100, suffix: '%', label: 'Client Satisfaction', duration: 1800 }
+    { value: 15, suffix: '+', label: 'Years Experience', duration: 1200 },
+    { value: 100, suffix: '+', label: 'Projects Delivered', duration: 2000 },
+    { value: 25, suffix: '+', label: 'Expert Team', duration: 1200 },
+    { value: 95, suffix: '%', label: 'Client Satisfaction', duration: 1500 }
   ]
 
   return (
@@ -105,9 +105,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronRight className="w-8 h-8 text-white rotate-90" />
-        </div>
+        <div className="absolute bottom-16 sm:bottom-24 left-[47%] sm:left-1/2 transform -translate-x-1/2 animate-bounce">
+  <ChevronRight className="w-8 h-8 text-white rotate-90" />
+</div>
       </section>
 
       {/* Stats Section */}
@@ -138,11 +138,11 @@ export default function Home() {
                 The BIM Partner You Can Trust
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Founded by Bijal Shah with over 20 years of BIM expertise in the UAE, B Square Global delivers high-quality BIM services that help architects, engineers, and builders succeed.
+              Founded by Amir Khan with over 15 years of BIM expertise in the India UAE,Saudi Arabia, Bimbridge delivers high-quality BIM services that help architects, engineers, and builders succeed.
+             
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Our mission is to make building projects easier and more successful with innovative BIM solutions tailored to each client's needs.
-              </p>
+              Our mission is to make building projects easier and more successful with innovative BIM solutions tailored to each client's needs.              </p>
               <Link href="/about">
                 <Button className="bg-blue-600 hover:bg-blue-700 group">
                   Learn More About Us
@@ -220,19 +220,25 @@ export default function Home() {
               { name: 'Wasl Gate By LMD', desc: 'Advanced coordination and documentation services',src:"https://images.unsplash.com/photo-1636907312269-d1facecaf8a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHwzRCUyMG1vZGVsaW5nfGVufDB8fHxibHVlfDE3NjEyNDA4Nzd8MA&ixlib=rb-4.1.0&q=85" }
             ].map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={project.src}
-                    alt={project.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent opacity-80" />
-                </div>
-                <CardContent className="p-1 -mt-20 relative z-10">
-                  <h3 className="text-2xl font-bold text-white mb-2">{project.name}</h3>
-                  <p className="text-gray-300">{project.desc}</p>
-                </CardContent>
-              </Card>
+  <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+    <img 
+      src={project.src}
+      alt={project.name}
+      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/60 to-transparent" />
+    
+    {/* Text overlay on image */}
+    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5 md:p-6 z-10">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 line-clamp-2">
+        {project.name}
+      </h3>
+      <p className="text-sm sm:text-base text-gray-300 leading-relaxed line-clamp-2 sm:line-clamp-3">
+        {project.desc}
+      </p>
+    </div>
+  </div>
+</Card>
             ))}
           </div>
 

@@ -110,50 +110,63 @@ export default function PortfolioPage() {
           <div className="space-y-20">
             {projects.map((project, index) => (
               <div 
-                key={index} 
-                id={`section-project-${index}`}
-                className={`transition-all duration-1000 ${isVisible[`section-project-${index}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              >
-                <Card className="overflow-hidden border-2 max-h-[600px] hover:border-blue-500 transition-all duration-300 hover:shadow-2xl">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className={`relative h-[400px] md:h-auto ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-                      <img 
-                        src={project.image}
-                        alt={project.name}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                          {project.category}
-                        </span>
-                      </div>
-                    </div>
-                    <div className={`p-8 md:p-12 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
-                      <div className="flex items-start gap-3 mb-4">
-                        <Building2 className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
-                        <div>
-                          <h3 className="text-3xl font-bold mb-2 text-foreground">{project.name}</h3>
-                          {project.note && (
-                            <p className="text-sm text-muted-foreground italic mb-4">{project.note}</p>
-                          )}
-                        </div>
-                      </div>
-                      <p className="text-lg text-muted-foreground mb-6">
-                        {project.description}
-                      </p>
-                      <div className="space-y-3">
-                        <h4 className="text-xl font-bold text-foreground mb-4">Key Outcomes:</h4>
-                        {project.outcomes.map((outcome, idx) => (
-                          <div key={idx} className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                            <span className="text-muted-foreground">{outcome}</span>
-                          </div>
-                        ))}
-                      </div>
+              key={index} 
+              id={`section-project-${index}`}
+              className={`transition-all duration-1000 ${isVisible[`section-project-${index}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            >
+              <Card className="overflow-hidden border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+                  {/* Image Section */}
+                  <div className={`relative h-[300px] sm:h-[350px] md:h-auto min-h-[400px] ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+                    <img 
+                      src={project.image}
+                      alt={project.name}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-blue-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+                        {project.category}
+                      </span>
                     </div>
                   </div>
-                </Card>
-              </div>
+                  
+                  {/* Content Section */}
+                  <div className={`p-6 sm:p-8 md:p-10 lg:p-12 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'} flex flex-col justify-center`}>
+                    <div className="flex items-start gap-2 sm:gap-3 mb-4">
+                      <Building2 className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-600 flex-shrink-0 mt-1" />
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-foreground break-words">
+                          {project.name}
+                        </h3>
+                        {project.note && (
+                          <p className="text-xs sm:text-sm text-muted-foreground italic mb-3 sm:mb-4">
+                            {project.note}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                    
+                    <p className="text-base sm:text-lg text-muted-foreground mb-5 sm:mb-6 leading-relaxed">
+                      {project.description}
+                    </p>
+                    
+                    <div className="space-y-2.5 sm:space-y-3">
+                      <h4 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4">
+                        Key Outcomes:
+                      </h4>
+                      {project.outcomes.map((outcome, idx) => (
+                        <div key={idx} className="flex items-start gap-2 sm:gap-3">
+                          <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0 mt-0.5 sm:mt-1" />
+                          <span className="text-sm sm:text-base text-muted-foreground leading-relaxed flex-1">
+                            {outcome}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
             ))}
           </div>
         </div>
@@ -200,7 +213,7 @@ export default function PortfolioPage() {
                 Many of our clients come back to us for new projects. This shows that they trust our work and appreciate our professionalism. We always focus on what our clients need, and our team is dedicated to doing their best on every project.
               </p>
               <div className="w-16 h-1 bg-blue-600 mx-auto mb-6" />
-              <p className="text-lg font-semibold text-foreground">B Square Global Values</p>
+              <p className="text-lg font-semibold text-foreground">Bimbridge Values</p>
             </CardContent>
           </Card>
         </div>
