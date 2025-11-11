@@ -244,7 +244,7 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-6">
-                <Card className="border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-lg">
+                {/* <Card className="border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-lg">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -265,7 +265,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
+                </Card> */}
 
                 <Card className="border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-lg">
                   <CardContent className="p-6">
