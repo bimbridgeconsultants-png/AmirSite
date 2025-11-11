@@ -184,10 +184,10 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: 500, suffix: '+', label: 'Projects Completed', duration: 2000 },
+              { value: 100, suffix: '+', label: 'Projects Completed', duration: 1500 },
               { value: 100, suffix: '%', label: 'On-Time Delivery', duration: 1500 },
-              { value: 95, suffix: '%', label: 'Client Retention', duration: 1800 },
-              { value: 50, suffix: 'M+', label: 'Sq Ft Modeled', duration: 2200 }
+              { value: 95, suffix: '%', label: 'Client Retention', duration: 1500 },
+              { value: 15, suffix: '+', label: 'Years of Experience', duration: 1500 }
             ].map((stat, index) => (
               <AnimatedCounter
                 key={index}

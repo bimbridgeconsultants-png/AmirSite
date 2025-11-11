@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import Image from 'next/image'
-import logo from '@/components/images/logo.png'
+import logo from '../public/images/logo.png'
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 

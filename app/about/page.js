@@ -6,6 +6,7 @@ import { Award, Target, Users, Heart, CheckCircle, TrendingUp } from 'lucide-rea
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import AnimatedCounter from '@/components/AnimatedCounter'
+import Image from 'next/image'
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState({ 'section-overview': true })
@@ -57,9 +58,9 @@ export default function AboutPage() {
   ]
 
   const achievements = [
-    { value: 20, suffix: '+', label: 'Years of BIM Expertise', duration: 1500 },
-    { value: 500, suffix: '+', label: 'Successful Projects', duration: 2000 },
-    { value: 50, suffix: '+', label: 'Skilled Professionals', duration: 1200 },
+    { value: 15, suffix: '+', label: 'Years of BIM Expertise', duration: 1500 },
+    { value: 100, suffix: '+', label: 'Successful Projects', duration: 2000 },
+    { value: 25, suffix: '+', label: 'Skilled Professionals', duration: 1200 },
     { value: 95, suffix: '%', label: 'Client Retention Rate', duration: 1800 }
   ]
 
@@ -222,9 +223,18 @@ export default function AboutPage() {
   <Card className="flex-1 border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-xl">
     <CardContent className="p-6 md:p-8">
       <div className="flex flex-col items-center text-center">
-        <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-gradient-to-br from-blue-600 to-slate-700 rounded-full flex items-center justify-center mb-6">
-          <Users className="w-12 h-12 md:w-16 md:h-16 text-white" />
-        </div>
+      <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto bg-gradient-to-br from-blue-600 to-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg">
+  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white/30 shadow-inner">
+    <Image
+      src="/images/f1.png"
+      alt="Rupali Raut"
+      width={144}
+      height={144}
+      
+    />
+  </div>
+</div>
+
         <div>
           <h3 className="text-2xl font-bold mb-2 text-foreground">Amir Khan</h3>
           <p className="text-md text-blue-600 mb-2">Founder & BIM Consultant</p>
@@ -244,9 +254,18 @@ export default function AboutPage() {
   <Card className="flex-1 border-2 hover:border-blue-500 transition-all duration-300 hover:shadow-xl">
     <CardContent className="p-6 md:p-8">
       <div className="flex flex-col items-center text-center">
-        <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-gradient-to-br from-blue-600 to-slate-700 rounded-full flex items-center justify-center mb-6">
-          <Users className="w-12 h-12 md:w-16 md:h-16 text-white" />
-        </div>
+      <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto bg-gradient-to-br from-blue-600 to-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg">
+  <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white/30 shadow-inner">
+    <Image
+      src="/images/f2.JPG"
+      alt="Rupali Raut"
+      width={144}
+      height={144}
+      className="object-cover w-full h-full"
+    />
+  </div>
+</div>
+
         <div>
           <h3 className="text-2xl font-bold mb-2 text-foreground">Rupali Raut</h3>
           <p className="text-md text-blue-600 mb-4">Co-Founder & BIM Specialist</p>
